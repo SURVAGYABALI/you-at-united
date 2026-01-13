@@ -31,14 +31,14 @@ export default function Slide1Miles({ data }: Slide1Props) {
     return () => clearInterval(timer);
   }, [data.totalMiles]);
 
-  const planes = useMemo(() => {
-    return Array.from({ length: 20 }).map((_, i) => ({
-      id: i,
-      x: Math.random() * 100 + '%',
-      duration: Math.random() * 3 + 4,
-      delay: Math.random() * 2,
-    }));
-  }, []);
+  // const planes = useMemo(() => {
+  //   return Array.from({ length: 20 }).map((_, i) => ({
+  //     id: i,
+  //     x: Math.random() * 100 + '%',
+  //     duration: Math.random() * 3 + 4,
+  //     delay: Math.random() * 2,
+  //   }));
+  // }, []);
 
   return (
     <div className="relative h-full w-full flex flex-col items-center justify-center bg-gradient-to-b from-[#002244] to-[#005DAA] overflow-hidden px-6">

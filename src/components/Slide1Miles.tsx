@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { useEffect, useState, useMemo } from 'react';
-import { Plane } from 'lucide-react';
+import { useEffect, useState } from 'react';
+
 
 interface Slide1Props {
   data: {
